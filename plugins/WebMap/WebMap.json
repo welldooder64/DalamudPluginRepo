@@ -1,0 +1,20 @@
+{
+  "Author": "welldooder64",
+  "Name": "Web Map",
+  "InternalName": "WebMap",
+  "AssemblyVersion": "0.1.0.0",
+  "Description": "Stream your FFXIV map to any web browser in real-time. See anything from the in-game map on a second screen or device.",
+  "ApplicableVersion": "any",
+  "RepoUrl": "https://github.com/welldooder64/FFXIVWebMap",
+  "Tags": [
+    "map",
+    "web"
+  ],
+  "DalamudApiLevel": 14,
+  "LoadRequiredState": 0,
+  "LoadSync": false,
+  "CanUnloadAsync": false,
+  "LoadPriority": 0,
+  "Punchline": "View your in-game map in your web browser.",
+  "AcceptsFeedback": true
+}
