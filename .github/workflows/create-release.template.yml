@@ -31,7 +31,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Install .NET
         uses: actions/setup-dotnet@v5
@@ -62,9 +62,9 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
-          path: ./bin/${{ inputs.build_configuration }}/${{ inputs.solution_name }}/*
+          path: ./bin/${{ inputs.build-configuration }}/${{ inputs.solution-name }}/*
 
   deploy:
     needs: build
@@ -72,14 +72,14 @@ jobs:
 
     steps:
       - name: Checkout Plugin Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ${{ inputs.personal-plugin-repo }}
           token: ${{ secrets.PAT }}
           ref: ${{ inputs.personal-plugin-repo-branch }}
 
       - name: Download Plugin Build Artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: artifact
           path: plugins/${{ inputs.internal-name }}
