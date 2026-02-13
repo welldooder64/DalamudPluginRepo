@@ -6,10 +6,7 @@ on:
       internal-name:
         type: string
         required: true
-      solution-name:
-        type: string
-        required: true
-      build-configuration:
+      build-location:
         type: string
         required: true
       personal-plugin-repo:
@@ -64,7 +61,8 @@ jobs:
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v6
         with:
-          path: ./bin/${{ inputs.build-configuration }}/${{ inputs.solution-name }}/*
+          name: artifact
+          path: ${{ inputs.build-location }}/*
 
   deploy:
     needs: build
