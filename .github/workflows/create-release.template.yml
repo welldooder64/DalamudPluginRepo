@@ -96,3 +96,31 @@ jobs:
           files: ./plugins/${{ inputs.internal-name }}/latest.zip
           draft: false
           prerelease: false
+
+
+  update-repo:
+    runs-on: ubuntu-latest
+
+    concurrency: update-repo
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.8'
+          cache: 'pip'
+
+      - name: Generate Repo
+        run: |
+          pip install -r requirements.txt
+          python generate_repo.py
+
+      - name: Commit Repo
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: GitHub Action
+          author_email: github-actions[bot]@users.noreply.github.com
+          message: Update repo
