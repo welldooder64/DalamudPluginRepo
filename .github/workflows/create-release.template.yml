@@ -50,6 +50,8 @@ jobs:
 
       - name: Install flatc
         uses: Nugine/setup-flatc@v1
+        with:
+          version: 25.2.10
 
       - name: Download Dalamud
         run: |
