@@ -99,13 +99,18 @@ jobs:
 
 
   update-repo:
+    needs: deploy
     runs-on: ubuntu-latest
 
     concurrency: update-repo
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout Plugin Repository
         uses: actions/checkout@v6
+        with:
+          repository: ${{ inputs.personal-plugin-repo }}
+          token: ${{ secrets.PAT }}
+          ref: ${{ inputs.personal-plugin-repo-branch }}
 
       - name: Setup Python
         uses: actions/setup-python@v6
