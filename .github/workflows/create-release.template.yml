@@ -62,7 +62,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: artifact
-          path: ${{ inputs.build-location }}/*
+          path: ${{ inputs.build-location }}/${{ inputs.internal-name }}/*
 
   deploy:
     needs: build
