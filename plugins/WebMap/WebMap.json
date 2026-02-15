@@ -2,7 +2,7 @@
   "Author": "welldooder64",
   "Name": "Web Map",
   "InternalName": "WebMap",
-  "AssemblyVersion": "0.1.0.0",
+  "AssemblyVersion": "0.1.0.1",
   "Description": "Stream your FFXIV map to any web browser in real-time. See anything from the in-game map on a second screen or device.",
   "ApplicableVersion": "any",
   "RepoUrl": "https://github.com/welldooder64/FFXIVWebMap",
