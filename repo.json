@@ -5,7 +5,7 @@
         "Punchline": "View your in-game map in your web browser.",
         "Description": "Stream your FFXIV map to any web browser in real-time. See anything from the in-game map on a second screen or device.",
         "InternalName": "WebMap",
-        "AssemblyVersion": "0.1.0.0",
+        "AssemblyVersion": "0.1.0.1",
         "RepoUrl": "https://github.com/welldooder64/FFXIVWebMap",
         "ApplicableVersion": "any",
         "Tags": [
@@ -13,12 +13,12 @@
             "web"
         ],
         "DalamudApiLevel": 14,
-        "DownloadLinkInstall": "https://github.com/welldooder64/FFXIVWebMap/releases/download/v0.1.0.0/latest.zip",
+        "DownloadLinkInstall": "https://github.com/welldooder64/FFXIVWebMap/releases/download/v0.1.0.1/latest.zip",
         "IsHide": false,
         "IsTestingExclusive": false,
-        "DownloadLinkTesting": "https://github.com/welldooder64/FFXIVWebMap/releases/download/v0.1.0.0/latest.zip",
-        "DownloadLinkUpdate": "https://github.com/welldooder64/FFXIVWebMap/releases/download/v0.1.0.0/latest.zip",
+        "DownloadLinkTesting": "https://github.com/welldooder64/FFXIVWebMap/releases/download/v0.1.0.1/latest.zip",
+        "DownloadLinkUpdate": "https://github.com/welldooder64/FFXIVWebMap/releases/download/v0.1.0.1/latest.zip",
         "DownloadCount": 0,
-        "LastUpdate": "1771026743"
+        "LastUpdate": "1771190801"
     }
 ]
